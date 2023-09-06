@@ -2,12 +2,11 @@
   "name": "native-run",
   "version": "1.7.2",
   "description": "A CLI for running apps on iOS/Android devices and simulators/emulators",
-  "bin": {
-    "native-run": "bin/native-run"
+  
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
+    "build": "lscpu",
     "watch": "tsc -w",
     "test": "jest --maxWorkers=4",
     "lint": "npm run eslint && npm run prettier -- --check",
